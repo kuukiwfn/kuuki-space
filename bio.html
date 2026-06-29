@@ -2,42 +2,69 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>kuuki's bio</title>
+    <title>kuuki's music</title>
     <style>
-        body { background: #000; color: #fff; font-family: "Times New Roman", Times, serif; margin: 0; padding: 20px; }
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: "Times New Roman", Times, serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding-top: 20px;
+        }
         
-        /* 顶部导航栏 */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; }
-        .left-nav a, .right-nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+        /* 导航栏样式 */
+        nav { 
+            margin-bottom: 50px; 
+            border-bottom: 1px solid #333; 
+            padding-bottom: 10px; 
+            width: 85%; 
+            max-width: 500px; 
+            text-align: center; 
+        }
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            margin: 0 15px; 
+        }
         
-        /* 联系方式区域（默认隐藏） */
-        #contact-box { display: none; text-align: center; margin-top: 50px; }
-        #contact-box a { display: block; color: #fff; margin: 10px 0; text-decoration: none; }
-        
-        .card { border: 2px solid #fff; padding: 30px; margin: 50px auto; max-width: 500px; background: #111; box-shadow: 5px 5px 0px #333; text-align: center; white-space: pre-wrap; line-height: 1.8; }
+        /* 歌曲链接样式 */
+        .song-list {
+            text-align: center;
+            width: 85%;
+            max-width: 600px;
+        }
+        a.song { 
+            color: #fff; 
+            text-decoration: none; 
+            display: block; 
+            margin-bottom: 20px; 
+            transition: 0.3s; 
+            font-size: 1.1em;
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+        }
+        a.song:hover { color: #888; border-bottom: 1px solid #fff; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="left-nav">
-            <a href="index.html">KUUKI</a>
-            <a href="music.html">MUSIC</a>
-        </div>
-        <div class="right-nav">
-            <a href="#" onclick="document.getElementById('contact-box').style.display='block'; return false;">CONTACT ME</a>
-        </div>
-    </header>
+    <nav>
+        <a href="index.html">KUUKI</a>
+        <a href="music.html">MUSIC</a>
+    </nav>
 
-    <div class="card">
-⟡ ✞ GENDER: #NONBINARY ✟⛧✟
-✟⛧✟ (ᗜᴗᗜ) touhou project (ᗜᴗᗜ) ♡overdose lover♡✦
-✡ v-kei ꙳scenecore lover ♡✦ rebzyyx₊kets4eki fans ⭒
-    </div>
-
-    <div id="contact-box">
-        <a href="https://x.com/voidsama777" target="_blank">Twitter</a>
-        <a href="https://t.me/kuukisama77" target="_blank">Telegram</a>
+    <div class="song-list">
+        <a href="【公式】【東方Vocal】幽閉サテライト _ 色は匂へど散りぬるを_歌唱_senya）【FullMV】≪幻想万華鏡オープニング主題歌≫（原曲：神々が恋した幻想郷）... [NpgaGhAW9So].mp3" class="song">
+            1. 幽閉サテライト - 色は匂へど散りぬるを
+        </a>
+        
+        <a href="魔理沙は大変なものを盗んでいきました 高画質ステレオFull ver. [CynsucGqMtI].mp3" class="song">
+            2. 魔理沙は大変なものを盗んでいきました
+        </a>
     </div>
 
 </body>
