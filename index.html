@@ -15,17 +15,24 @@
             height: 100vh; 
             margin: 0; 
         }
-        .content { 
-            text-align: center; 
-            line-height: 1.8;
+        /* 让链接看起来像普通文本，但点击有效 */
+        a { 
+            color: #fff; 
+            text-decoration: none; 
+            transition: 0.3s; 
         }
-        h1 { font-size: 2em; margin-bottom: 20px; }
-        p { font-size: 1.2em; }
+        a:hover { 
+            color: #888; /* 鼠标悬停时变暗，提示可点击 */
+        }
+        .content { text-align: center; }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>kuuki no darkroom</h1>
+        <!-- 这里点击会跳转到你的 bio.html，如果你的 Bio 页面改名叫 bio.html 的话 -->
+        <a href="bio.html">
+            <h1>kuuki no darkroom</h1>
+        </a>
         <p>Underground static space.</p>
     </div>
 </body>
