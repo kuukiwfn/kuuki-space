@@ -1,27 +1,51 @@
-<style>
-    body { 
-        background: #000; 
-        color: #fff; 
-        font-family: "Times New Roman", Times, serif; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        min-height: 100vh; 
-        margin: 0; 
-    }
-    h1 { border-bottom: 1px solid #fff; margin-bottom: 30px; padding-bottom: 10px; }
-    
-    /* 强制所有链接初始为白色 */
-    a { 
-        color: #fff; 
-        text-decoration: none; 
-        display: block; 
-        margin-bottom: 20px; 
-        transition: 0.3s; 
-        font-size: 1.2em;
-    }
-    
-    /* 悬停时稍微变暗一点点，作为点击反馈 */
-    a:hover { color: #888; }
-</style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>kuuki's music</title>
+    <style>
+        body { background: #000; color: #fff; font-family: "Times New Roman", Times, serif; margin: 0; padding: 20px; }
+        
+        /* 导航栏样式（与 bio.html 保持统一） */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; border-bottom: 1px solid #333; margin-bottom: 50px; }
+        .left-nav a, .right-nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+        
+        /* 歌曲列表样式 */
+        .song-list { text-align: center; width: 85%; max-width: 600px; margin: 0 auto; }
+        a.song { color: #fff; text-decoration: none; display: block; margin-bottom: 25px; transition: 0.3s; font-size: 1.2em; }
+        a.song:hover { color: #888; }
+
+        /* 联系方式区域（默认隐藏） */
+        #contact-box { display: none; text-align: center; margin-top: 50px; }
+        #contact-box a { display: block; color: #fff; margin: 10px 0; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="left-nav">
+            <a href="index.html">KUUKI</a>
+            <a href="music.html">MUSIC</a>
+        </div>
+        <div class="right-nav">
+            <a href="#" onclick="document.getElementById('contact-box').style.display='block'; return false;">CONTACT ME</a>
+        </div>
+    </header>
+
+    <div class="song-list">
+        <a href="【公式】【東方Vocal】幽閉サテライト _ 色は匂へど散りぬるを_歌唱_senya）【FullMV】≪幻想万華鏡オープニング主題歌≫（原曲：神々が恋した幻想郷）... [NpgaGhAW9So].mp3" class="song">
+            1. 幽閉サテライト - 色は匂へど散りぬるを
+        </a>
+        
+        <a href="魔理沙は大変なものを盗んでいきました 高画質ステレオFull ver. [CynsucGqMtI].mp3" class="song">
+            2. 魔理沙は大変なものを盗んでいきました
+        </a>
+    </div>
+
+    <div id="contact-box">
+        <a href="https://x.com/voidsama777" target="_blank">Twitter</a>
+        <a href="https://t.me/kuukisama77" target="_blank">Telegram</a>
+    </div>
+
+</body>
+</html>
