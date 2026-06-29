@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <title>kuuki no darkroom</title>
     <style>
-        body { background: #000; color: #fff; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        a { color: #fff; text-decoration: none; cursor: pointer; }
-        a:hover { color: #888; } /* 点击时会变暗，更有暗房感 */
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: "Times New Roman", Times, serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        .content { 
+            text-align: center; 
+            line-height: 1.8;
+        }
+        h1 { font-size: 2em; margin-bottom: 20px; }
+        p { font-size: 1.2em; }
     </style>
 </head>
 <body>
     <div class="content">
-        <!-- 这里点击就能跳转到 home.html -->
-        <a href="home.html"><h1>kuuki no darkroom</h1></a>
+        <h1>kuuki no darkroom</h1>
         <p>Underground static space.</p>
     </div>
 </body>
