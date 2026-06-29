@@ -4,59 +4,30 @@
     <meta charset="UTF-8">
     <title>kuuki's bio</title>
     <style>
-        body { 
-            background: #000; 
-            color: #fff; 
-            font-family: "Times New Roman", Times, serif; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            min-height: 100vh; 
-            margin: 0; 
-        }
+        body { background: #000; color: #fff; font-family: "Times New Roman", Times, serif; margin: 0; padding: 20px; }
         
-        /* 强制接管全局链接颜色，彻底消灭蓝色！ */
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .card { 
-            border: 2px solid #fff; 
-            padding: 30px; 
-            max-width: 500px; 
-            width: 85%; 
-            background: #111; 
-            box-shadow: 5px 5px 0px #333; 
-            white-space: pre-wrap; 
-            line-height: 1.8; 
-            text-align: center; 
-            font-family: "Times New Roman", Times, serif;
-        }
+        /* 顶部导航栏 */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; }
+        .left-nav a, .right-nav a { color: #fff; text-decoration: none; margin: 0 10px; }
         
-        .social { 
-            margin-top: 30px; 
-            text-align: center;
-        }
+        /* 联系方式区域（默认隐藏） */
+        #contact-box { display: none; text-align: center; margin-top: 50px; }
+        #contact-box a { display: block; color: #fff; margin: 10px 0; text-decoration: none; }
         
-        .social a { 
-            display: block; 
-            margin-bottom: 10px;
-            color: #fff; /* 明确设为纯白 */
-            border-bottom: 1px solid #333; 
-            transition: 0.3s; 
-            font-family: "Times New Roman", Times, serif;
-            padding-bottom: 5px;
-        }
-        
-        .social a:hover { 
-            color: #888; /* 悬停时稍微变暗一点点作为点击反馈 */
-            border-bottom: 1px solid #888; 
-        }
+        .card { border: 2px solid #fff; padding: 30px; margin: 50px auto; max-width: 500px; background: #111; box-shadow: 5px 5px 0px #333; text-align: center; white-space: pre-wrap; line-height: 1.8; }
     </style>
 </head>
 <body>
+
+    <header>
+        <div class="left-nav">
+            <a href="index.html">KUUKI</a>
+            <a href="music.html">MUSIC</a>
+        </div>
+        <div class="right-nav">
+            <a href="#" onclick="document.getElementById('contact-box').style.display='block'; return false;">CONTACT ME</a>
+        </div>
+    </header>
 
     <div class="card">
 ⟡ ✞ GENDER: #NONBINARY ✟⛧✟
@@ -64,10 +35,9 @@
 ✡ v-kei ꙳scenecore lover ♡✦ rebzyyx₊kets4eki fans ⭒
     </div>
 
-    <div class="social">
+    <div id="contact-box">
         <a href="https://x.com/voidsama777" target="_blank">Twitter</a>
         <a href="https://t.me/kuukisama77" target="_blank">Telegram</a>
-        <a href="music.html">Music Library</a>
     </div>
 
 </body>
