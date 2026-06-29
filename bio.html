@@ -16,6 +16,12 @@
             margin: 0; 
         }
         
+        /* 强制接管全局链接颜色，彻底消灭蓝色！ */
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
         .card { 
             border: 2px solid #fff; 
             padding: 30px; 
@@ -37,16 +43,16 @@
         .social a { 
             display: block; 
             margin-bottom: 10px;
-            color: #888; 
-            text-decoration: none; 
+            color: #fff; /* 明确设为纯白 */
             border-bottom: 1px solid #333; 
             transition: 0.3s; 
             font-family: "Times New Roman", Times, serif;
+            padding-bottom: 5px;
         }
         
         .social a:hover { 
-            color: #fff; 
-            border-bottom: 1px solid #fff; 
+            color: #888; /* 悬停时稍微变暗一点点作为点击反馈 */
+            border-bottom: 1px solid #888; 
         }
     </style>
 </head>
@@ -61,8 +67,8 @@
     <div class="social">
         <a href="https://x.com/voidsama777" target="_blank">Twitter</a>
         <a href="https://t.me/kuukisama77" target="_blank">Telegram</a>
+        <a href="music.html">Music Library</a>
     </div>
 
 </body>
 </html>
-<a href="music.html">Music Library</a>
